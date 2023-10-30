@@ -1,4 +1,5 @@
 ﻿@page
+@using Big_Mammas_Pizza.model;
 @model Big_Mammas_Pizza.Pages.menuModel
 @{
     ViewData["Title"] = "Menus";
@@ -6,4 +7,31 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Pizzanumber</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Pizza p in Model.Pizzaer)
+        {
+            <tr>
+                <td>@p.PizzaNumber</td>
+                <td>@p.Name</td>
+                <td>@p.Description</td>
+                <td>@p.Price</td>
+            </tr>
+        }
+
+
+    </tbody>
+
+
+
+</table>
+
+<p>That was it</p>
