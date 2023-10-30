@@ -46,7 +46,7 @@
         public drikke()
         {
             _number = 0;
-            _name = ""
+            _name = "";
         }
 
 
