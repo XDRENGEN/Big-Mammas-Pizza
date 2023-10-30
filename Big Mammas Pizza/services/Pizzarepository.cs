@@ -32,7 +32,7 @@ namespace Big_Mammas_Pizza.services
             _katalog.Clear();
 
             _katalog.Add(1, new Pizza(1,"Margherita","Tomato & cheese", 69));
-            //_katalog.Add(2, new Pizza(2,));
+            _katalog.Add(2, new Pizza(2, "Vesuvio", "Tomato, cheese & ham", 75));
             //_katalog.Add(3, new Pizza(3, ));
             //_katalog.Add(4, new Pizza(4,));
             //_katalog.Add(5, new Pizza(5,));
