@@ -3,7 +3,7 @@ using Big_Mammas_Pizza.services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Big_Mammas_Pizza.Pages
+namespace Big_Mammas_Pizza.Pages.Pizza
 {
     public class PizzaModel : PageModel
     {
