@@ -56,8 +56,8 @@ namespace Big_Mammas_Pizza.services
             _katalog.Add(23, new Pizza(23, "Kokkode", "(New) tomato, cheese, chicken fillet, peas, pancetta (italien bacon)", 95));
             _katalog.Add(24, new Pizza(24, "Antonello", "tomato, cheese, pepperoni, meetsauce, cocktail sausages & onion", 95));
             _katalog.Add(25, new Pizza(25, "Pasqualino", "Tomato, cheese, pepperoni & pineapple", 99));
-            _katalog.Add(26, new Pizza(26, "Felix", "Toamto, cheese & pepperoni", 89));
-            _katalog.Add(27, new Pizza(27, "Bambino", "Ham/cheese or pepperoni/cheese or meetsauce/cheese with Nutella", 63));
+            _katalog.Add(26, new Pizza(26, "Felix", "Tomato, cheese & pepperoni", 89));
+            _katalog.Add(27, new Pizza(27, "Bambino", "Ham/cheese or pepperoni/cheese or meat sauce/cheese with Nutella", 63));
 
         }
 
