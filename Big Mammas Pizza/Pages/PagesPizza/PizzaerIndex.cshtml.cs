@@ -3,9 +3,9 @@ using Big_Mammas_Pizza.services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Big_Mammas_Pizza.Pages.Pizza
+namespace Big_Mammas_Pizza.Pages.PagesPizza
 {
-    public class PizzaModel : PageModel
+    public class PizzaerIndexModel : PageModel
     {
         //property til View'et
         public List<Pizza> Pizzaer { get; set; }
