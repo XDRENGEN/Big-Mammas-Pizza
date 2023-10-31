@@ -7,4 +7,8 @@
     <RootNamespace>Big_Mammas_Pizza</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="billeder\" />
+  </ItemGroup>
+
 </Project>
