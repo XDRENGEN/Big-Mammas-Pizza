@@ -41,7 +41,7 @@ namespace Big_Mammas_Pizza.services
             _katalog.Add(8, new Pizza(8, "Italiana", "tomato, cheese, onion & meetsauce", 75));
             _katalog.Add(9, new Pizza(9, "Gorgonzola", "Tomato, gorgonzola, onion and mushrooms", 85));
             _katalog.Add(10, new Pizza(10, "Contadina", "Tomato, cheese, mushrooms & olives", 75));
-            _katalog.Add(11, new Pizza(11, "Naples", "Tomato, chreese, anchovies & olives", 79));
+            _katalog.Add(11, new Pizza(11, "Naples", "Tomato, cheese, anchovies & olives", 79));
             _katalog.Add(12, new Pizza(12, "Vichinga", "Tomato, cheese, ham, mushrooms, peppers, garlic & chili (strong)" , 80));
             _katalog.Add(13, new Pizza(13, "Calzone Special", "(Not baked) tomato, cheese, shrimp, ham & meat sauce", 80));
             _katalog.Add(14, new Pizza(14, "Esotica", "Tomato, cheese, ham, shrimp & pineapple", 80));
