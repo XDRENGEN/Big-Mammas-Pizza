@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+
+    @* Dette gør at siden automatisk tilpasser sig afhænig af hvad man ser på. F.eks. computer, iPad eller mobil *@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BIG MAMMAS PIZZA</title>
+    <title>BIG MAMMA'S PIZZA</title>
 
     @* LOGO TIL TAB - VIRKER IKKE ENDNU *@
     <link rel="icon" type="image/x-icon" href="\billeder\logo.ico">
@@ -50,8 +52,14 @@
             &copy; 2023 - Big_Mammas_Pizza - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div> *@
 
-        <div class="container">
+
+        @* Klassen er ændret fra container til MadeBy, så vi selv kan ændre på font, farve osv. *@
+        <div class="MadeBy">
             Made by Isak, Thomas, Yasir, Ali, Julius & Christian
+        </div>
+
+        <div class="open">
+            Opening Hours<br /><br />Monday: 11-22<br />Tuesday: 11-22<br />Wednesday: 11-22<br />Thursday: 11-22<br />Friday: 11-02<br />Saturday: 11-02<br />Sunday: 11-22
         </div>
 
     </footer>
