@@ -8,8 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\NyePizzaer\**" />
+    <Content Remove="Pages\NyePizzaer\**" />
+    <EmbeddedResource Remove="Pages\NyePizzaer\**" />
+    <None Remove="Pages\NyePizzaer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="billeder\" />
-    <Folder Include="Pages\NyePizzaer\" />
   </ItemGroup>
 
 </Project>
