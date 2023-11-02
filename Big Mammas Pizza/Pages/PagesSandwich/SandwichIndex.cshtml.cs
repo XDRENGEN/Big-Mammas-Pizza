@@ -7,13 +7,13 @@ namespace Big_Mammas_Pizza.Pages.PagesSandwich;
 public class SandwichIndexModel : PageModel
 {
     //property til View'et
-    public List<Sandwich> Sandwiches { get; set; }
+    public List<Sandwich> Sandwich { get; set; }
 
     public void OnGet()
     {
         SandwichRepository repo = new SandwichRepository(true);
 
-        Sandwiches = repo.HentAlleSandwiches();
+        Sandwich = repo.HentAlleSandwiches();
     }
 }
 
