@@ -1,0 +1,31 @@
+﻿@page
+@using Big_Mammas_Pizza.model;
+@model Big_Mammas_Pizza.Pages.PagesSandwich.SandwichIndexModel
+@{
+}
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Sandwichnumber</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price in kr.</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (Sandwich s in Model.Sandwiches)
+    {
+        <tr>
+            <td>@s.SandwichNumber</td>
+            <td>@s.Name</td>
+            <td>@s.Description</td>
+            <td>@s.Price</td>
+        </tr>
+    }
+
+
+    </tbody>
+
+
+
+</table>
