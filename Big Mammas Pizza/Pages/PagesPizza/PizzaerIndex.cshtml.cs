@@ -2,12 +2,10 @@ using Big_Mammas_Pizza.model;
 using Big_Mammas_Pizza.services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Text;
 
-
-namespace Big_Mammas_Pizza.Pages
+namespace Big_Mammas_Pizza.Pages.PagesPizza
 {
-    public class menuModel : PageModel
+    public class PizzaerIndexModel : PageModel
     {
         //property til View'et
         public List<Pizza> Pizzaer { get; set; }
@@ -18,8 +16,5 @@ namespace Big_Mammas_Pizza.Pages
 
             Pizzaer = repo.HentAllePizzaer();
         }
-
     }
 }
-    
-
