@@ -16,7 +16,7 @@ namespace Big_Mammas_Pizza.services
         }
 
         // konstruktør
-        public PizzaRepository(bool mockData = false)
+        public PizzaRepository (bool mockData = false)
         {
             _katalog = new Dictionary<int, Pizza>();
 
