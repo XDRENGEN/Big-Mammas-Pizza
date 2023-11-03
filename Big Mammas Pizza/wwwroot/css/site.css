@@ -64,11 +64,13 @@ h2 {
 .MadeBy {
     color: whitesmoke;
     text-align:left;
+    margin-left: 60px;
 }
 
 .open {
     color: whitesmoke;
     text-align: right;
+    margin-right: 60px;
 }
 
 
