@@ -1,0 +1,30 @@
+﻿@page
+@model Big_Mammas_Pizza.Pages.Pizzaer.NyPizzaModel
+@{
+}
+<h1>Create new pizza</h1>
+
+
+<form method="post">
+    <div class="form-group>">
+        
+
+        <label>Pizza navn</label><br />
+        <input class="form-control" asp-for="@Model.NytPizzaNavn" /><br />
+        <span asp-validation-for="@Model.NytPizzaNavn" class="text-danger"></span><br />
+
+        <label>Pizza price</label><br />
+        <input class="form-control" asp-for="@Model.NytPizzaPrice" /><br />
+
+
+        <label>Pizza description</label><br />
+        <input class="form-control" asp-for="@Model.NytPizzaDescription" /><br />
+
+
+        <label>Pizza nummer</label><br />
+        <input class="form-control" asp-for="@Model.NytPizzaNummer" /><br />
+
+
+        <input type="submit" value="Add new pizza" class="btn btn-success" />
+    </div>
+</form>
