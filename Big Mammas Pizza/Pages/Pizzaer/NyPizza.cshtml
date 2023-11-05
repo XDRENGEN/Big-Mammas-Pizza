@@ -7,8 +7,6 @@
 
 <form method="post">
     <div class="form-group>">
-        
-
         <label>Pizza navn</label><br />
         <input class="form-control" asp-for="@Model.NytPizzaNavn" /><br />
         <span asp-validation-for="@Model.NytPizzaNavn" class="text-danger"></span><br />
@@ -26,5 +24,6 @@
 
 
         <input type="submit" value="Add new pizza" class="btn btn-success" />
+        <input type="submit" value="Fortryd" class="btn btn-danger" asp-page-handler="Cancel" />
     </div>
 </form>
