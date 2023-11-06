@@ -1,7 +1,11 @@
+using Big_Mammas_Pizza.services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddSingleton<PizzaRepository>(new PizzaRepository(true));
 
 var app = builder.Build();
 
