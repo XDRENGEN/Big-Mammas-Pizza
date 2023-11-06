@@ -1,4 +1,4 @@
-﻿@page
+﻿@* @page
 @model Big_Mammas_Pizza.Pages.Pizzaer.EditPizzaModel
 @{
 }
@@ -13,6 +13,10 @@
 
 
         <label>Pizza price</label><br />
+        <input class="form-control" asp-for="@Model.NytPizzaPris" /><br />
+        <span asp-validation-for="@Model.NytPizzaPris" class="text-danger"></span><br />
+
+
 
     </div>
-</form>
+</form> *@
