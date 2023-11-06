@@ -5,16 +5,33 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Big_Mammas_Pizza.Pages.PagesPizza
 {
-    public class PizzaerIndexModel : PageModel
+    public class IndexModel : PageModel
     {
+
+        //Instans af pizza repository
+        private PizzaRepository _repo;
+
+        //Dependency Injection
+        public IndexModel(PizzaRepository repository)
+        {
+            _repo = repository;
+        }
+
+
+
         //property til View'et
         public List<Pizza> Pizzaer { get; set; }
 
         public void OnGet()
         {
-            PizzaRepository repo = new PizzaRepository(true);
+            //PizzaRepository repo = new PizzaRepository(true)
+            Pizzaer = _repo.HentAllePizzaer();
+        }
 
-            Pizzaer = repo.HentAllePizzaer();
+
+        public IActionResult OnPost()
+        {
+            return RedirectToPage("NyPizza");
         }
     }
 }

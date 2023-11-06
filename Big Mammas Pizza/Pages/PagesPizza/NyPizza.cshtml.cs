@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Big_Mammas_Pizza.Pages.Pizzaer
+namespace Big_Mammas_Pizza.Pages.PagesPizza
 {
     public class NyPizzaModel : PageModel
     {
