@@ -87,25 +87,21 @@ namespace Big_Mammas_Pizza.services
                     //return null;
                 }
             }
-
-            public List<Sandwich> HentAlleSandwiches()
-            {
-                return _katalog.Values.ToList();
-            }
-
-
-
-
-            public override string ToString()
-            {
-                String pænTekst = String.Join(", ", _katalog.Values);
-
-                return $"{{{nameof(Katalog)}={pænTekst}}}";
-            }
-
-        internal List<Sandwich> HentAlleSandwicher()
+        
+        public List<Pizza> HentAllePizzaer()
         {
-            throw new NotImplementedException();
+            return _katalog.Values.ToList();
         }
+
+
+
+
+        public override string ToString()
+        {
+            String pænTekst = String.Join(", ", _katalog.Values);
+
+            return $"{{{nameof(Katalog)}={pænTekst}}}";
+        }
+
     }
 }
