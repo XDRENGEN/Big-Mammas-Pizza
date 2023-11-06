@@ -1,0 +1,38 @@
+﻿@page
+@    using Big_Mammas_Pizza.model;
+@model IndexModel
+@{
+    ViewData["Title"] = "Pizzaer";
+}
+
+<h1 class="jumbotron">Show all pizzas</h1>
+
+<form method="post">
+    Add new pizza <input type="submit" value="Opret" class="btn btn-primary" />
+
+</form>
+<p></p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Pizza Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Pizza Number</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    @* <tbody>
+        @foreach (Pizza p in Model.Pizzaer)
+        {
+            <tr>
+                <td>@p.PizzaName</td>
+                <td>@p.Price</td>
+                <td>@p.Description</td>
+                <td>@p.PizzaNumber</td>
+                <td><a asp-page="EditPizza" asp-route-nummer="@p.PizzaNumber">Change</a></td>
+            </tr>
+        }
+    </tbody> *@
+</table>
