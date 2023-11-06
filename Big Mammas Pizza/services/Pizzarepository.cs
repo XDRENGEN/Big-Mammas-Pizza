@@ -16,7 +16,7 @@ namespace Big_Mammas_Pizza.services
         }
 
         // konstruktør
-        public PizzaRepository (bool mockData = false)
+        public PizzaRepository(bool mockData = false)
         {
             _katalog = new Dictionary<int, Pizza>();
 
@@ -31,7 +31,7 @@ namespace Big_Mammas_Pizza.services
         {
             _katalog.Clear();
 
-            _katalog.Add(1, new Pizza(1,"Margherita","Tomato & cheese", 69));
+            _katalog.Add(1, new Pizza(1, "Margherita", "Tomato & cheese", 69));
             _katalog.Add(2, new Pizza(2, "Vesuvio", "Tomato, cheese & ham", 75));
             _katalog.Add(3, new Pizza(3, "Capricciosa", "Tomato, cheese, ham and mushrooms", 80));
             _katalog.Add(4, new Pizza(4, "Calzone", "Baked pizza with tomato, cheese, ham and mushrooms", 80));
@@ -42,7 +42,7 @@ namespace Big_Mammas_Pizza.services
             _katalog.Add(9, new Pizza(9, "Gorgonzola", "Tomato, gorgonzola, onion and mushrooms", 85));
             _katalog.Add(10, new Pizza(10, "Contadina", "Tomato, cheese, mushrooms & olives", 75));
             _katalog.Add(11, new Pizza(11, "Naples", "Tomato, cheese, anchovies & olives", 79));
-            _katalog.Add(12, new Pizza(12, "Vichinga", "Tomato, cheese, ham, mushrooms, peppers, garlic & chili (strong)" , 80));
+            _katalog.Add(12, new Pizza(12, "Vichinga", "Tomato, cheese, ham, mushrooms, peppers, garlic & chili (strong)", 80));
             _katalog.Add(13, new Pizza(13, "Calzone Special", "(Not baked) tomato, cheese, shrimp, ham & meat sauce", 80));
             _katalog.Add(14, new Pizza(14, "Esotica", "Tomato, cheese, ham, shrimp & pineapple", 80));
             _katalog.Add(15, new Pizza(15, "Tonno", "Tomato, cheese, tuna & shrimp", 85));
@@ -112,7 +112,7 @@ namespace Big_Mammas_Pizza.services
         }
 
 
-       
+
 
         public override string ToString()
         {
@@ -120,6 +120,6 @@ namespace Big_Mammas_Pizza.services
 
             return $"{{{nameof(Katalog)}={pænTekst}}}";
         }
-    
-}
+
+    }
 }
