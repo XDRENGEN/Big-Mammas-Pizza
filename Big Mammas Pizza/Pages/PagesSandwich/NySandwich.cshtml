@@ -1,0 +1,29 @@
+﻿@page
+@model NySandwichModel
+@{
+}
+<h1>Create new sandwich</h1>
+
+
+<form method="post">
+    <div class="form-group>">
+        <label>Sandwich navn</label><br />
+        <input class="form-control" asp-for="@Model.NytSandwichNavn" /><br />
+        <span asp-validation-for="@Model.NytSandwichNavn" class="text-danger"></span><br />
+
+        <label>Sandwich price</label><br />
+        <input class="form-control" asp-for="@Model.NytSandwichPrice" /><br />
+
+
+        <label>Sandwich description</label><br />
+        <input class="form-control" asp-for="@Model.NytSandwichDescription" /><br />
+
+
+        <label>Sandwich nummer</label><br />
+        <input class="form-control" asp-for="@Model.NytSandwichNummer" /><br />
+
+
+        <input type="submit" value="Add new sandwich" class="btn btn-success" />
+        <input type="submit" value="Abort" class="btn btn-danger" asp-page-handler="Cancel" />
+    </div>
+</form>

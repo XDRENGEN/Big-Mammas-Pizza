@@ -3,17 +3,35 @@ using Big_Mammas_Pizza.services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Big_Mammas_Pizza.Pages.PagesSandwich;
-public class SandwichIndexModel : PageModel
+namespace Big_Mammas_Pizza.Pages.PagesSandwich
 {
-    //property til View'et
-    public List<Sandwich> Sandwich { get; set; }
-
-    public void OnGet()
+    public class IndexModel : PageModel
     {
-        SandwichRepository repo = new SandwichRepository(true);
 
-        Sandwich = repo.HentAlleSandwiches();
+        //Instans af pizza repository
+        private SandwichRepository _repo;
+
+        //Dependency Injection
+        public IndexModel(SandwichRepository repository)
+        {
+            _repo = repository;
+        }
+
+
+
+        //property til View'et
+        public List<Sandwich> Sandwicher { get; set; }
+
+        public void OnGet()
+        {
+            //PizzaRepository repo = new PizzaRepository(true)
+            Sandwicher = _repo.HentAlleSandwicher();
+        }
+
+
+        public IActionResult OnPost()
+        {
+            return RedirectToPage("NySandwich");
+        }
     }
 }
-
