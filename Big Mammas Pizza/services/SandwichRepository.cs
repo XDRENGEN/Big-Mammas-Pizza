@@ -102,5 +102,10 @@ namespace Big_Mammas_Pizza.services
 
                 return $"{{{nameof(Katalog)}={pænTekst}}}";
             }
+
+        internal List<Sandwich> HentAlleSandwicher()
+        {
+            throw new NotImplementedException();
         }
+    }
 }
