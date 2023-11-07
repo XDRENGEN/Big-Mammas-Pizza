@@ -1,0 +1,29 @@
+﻿@page
+@model Big_Mammas_Pizza.Pages.PagesDrikke.NyDrikkeModel
+@{
+}
+<h1>Create new drink</h1>
+
+
+<form method="post">
+    <div class="form-group>">
+        <label>Drink number</label><br />
+        <input class="form-control" asp-for="@Model.NytDrinkNumber" /><br />
+        <span asp-validation-for="@Model.NytDrinkNumber" class="text-danger"></span><br />
+
+        <label>Drink name</label><br />
+        <input class="form-control" asp-for="@Model.NytDrinkName" /><br />
+
+
+        <label>Drink price</label><br />
+        <input class="form-control" asp-for="@Model.NytDrinkPrice" /><br />
+
+
+        <label>Alcoholic</label><br />
+        <input class="form-control" asp-for="@Model.NytAlcoholic" /><br />
+
+
+        <input type="submit" value="Add new pizza" class="btn btn-success" />
+        <input type="submit" value="Regret" class="btn btn-danger" asp-page-handler="Cancel" />
+    </div>
+</form>

@@ -1,0 +1,43 @@
+﻿@page
+@using Big_Mammas_Pizza.model;
+@model Big_Mammas_Pizza.Pages.PagesDrikke.DrikkeModel
+@{
+    ViewData["Title"] = "Drikkevarer";
+}
+
+<h1 class="jumbotron">Vis alle drikkevarer</h1>
+
+<form method="post">
+    <input type="submit" value="ADD NEW BEVERAGE" class="btn btn-primary"/>
+
+</form>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Price in kr.</th>
+            <th>Alcoholic</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Drikke d in Model.Drikkes)
+        {
+            <tr>
+                <td>@d.Number</td>
+                <td>@d.Name</td>
+                <td>@d.Price in kr.</td>
+                <td>@d.Alcoholic</td>
+                <td><a asp-page="EditDrikke" asp-route-nummer="@d.Number">Ændre</a></td>
+                <td><a asp-page="DeleteDrikke" asp-route-nummer="@d.Number">Slet</a></td>
+            </tr>
+        }
+
+
+    </tbody>
+
+
+
+</table>

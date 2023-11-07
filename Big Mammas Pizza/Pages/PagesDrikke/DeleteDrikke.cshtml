@@ -1,0 +1,22 @@
+﻿@page
+@model Big_Mammas_Pizza.Pages.PagesDrikke.DeleteDrikkeModel
+@{
+    <h1> Delete drink </h1>
+
+    <form method="post">
+        <div class="form-group>">
+            <label>Drink number</label> : @Model.Drikke.Number<br />
+            <br />
+            <label>Drink name</label> : @Model.Drikke.Name<br />
+            <br />
+            <label>Drink price</label>  : @Model.Drikke.Price<br />
+            <br />
+
+
+
+            <input type="submit" value="Delete drink" class="btn btn-danger" asp-page-handler="Delete" asp-route-nummer="@Model.Drikke.Number" />
+
+            <input type="submit" value="Undo" class="btn btn-warning" asp-page-handler="Cancel" />
+        </div>
+    </form>
+}
