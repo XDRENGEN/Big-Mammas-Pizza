@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 builder.Services.AddSingleton<PizzaRepository>(new PizzaRepository(true));
-
+ 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
