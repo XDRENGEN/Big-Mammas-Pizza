@@ -25,7 +25,7 @@ namespace Big_Mammas_Pizza.Pages.PagesSandwich
         public void OnGet()
         {
             //PizzaRepository repo = new PizzaRepository(true)
-            Sandwicher = _repo.HentAlleSandwicher();
+            Sandwicher = _repo.HentAlleSandwiches();
         }
 
 

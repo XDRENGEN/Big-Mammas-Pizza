@@ -88,7 +88,7 @@ namespace Big_Mammas_Pizza.services
                 }
             }
         
-        public List<Pizza> HentAllePizzaer()
+        public List<Sandwich> HentAlleSandwiches()
         {
             return _katalog.Values.ToList();
         }
