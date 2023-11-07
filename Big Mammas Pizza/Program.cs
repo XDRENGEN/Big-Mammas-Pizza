@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 builder.Services.AddSingleton<PizzaRepository>(new PizzaRepository(true));
+builder.Services.AddSingleton<SandwichRepository>(new SandwichRepository(true));
 
 var app = builder.Build();
 
